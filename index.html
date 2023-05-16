@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Compass Studios | Game Developer</title>
+  </head>
+  <body>
+    <!-- Parte do Header  -->
+
+    <header class="header">
+      <a href="#" class="logo"
+        >C<i class="bx bx-compass compass"></i>mpass Studi<i
+          class="bx bx-compass compass"
+        ></i
+      ></a>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <a href="#home" class="current" onclick="currentAdd()">Home</a>
+          </li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <div class="menu-icon" onclick="menuToggle()">
+        <i id="menu-icon" class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <!-- Parte da Home -->
+
+    <section class="home-page" id="home">
+      <div class="home-page-text" data-animation="left">
+        <h1 data-writer>Compass Studio</h1>
+        <h3>Game <span>DEVELOPER</span></h3>
+        <p>
+          Compass Studio vai acompanhá-lo(a) na missão de criar e guiar <br />
+          experiências inesquecíveis para jogadores em todos os cantos do
+          planeta.
+        </p>
+      </div>
+
+      <i class="bx bx-compass" data-animation="bottom"></i>
+    </section>
+
+    <!-- Parte do Sobre -->
+
+    <section class="sobre-page" id="sobre">
+      <div class="sobre-page-image">
+        <img
+          src="./assets/sobreNosImage2.png"
+          alt="Logo marca da desenvolvedora"
+          data-animation="left"
+        />
+      </div>
+      <div class="sobre-page-text">
+        <h2 data-animation="right">
+          Sobre a<span data-animation="right"> Compass Studio</span>
+        </h2>
+        <p data-animation="right">
+          Somos um grupo dedicado de <span>desenvolvedores de jogos</span> que
+          trabalha incansavelmente para trazer as melhores experiências de jogo
+          para nossos jogadores. Com 6+ anos de experiência no mercado, temos
+          orgulho em criar jogos que cativam e encantam nossos jogadores. Nosso
+          compromisso com a qualidade se estende além da criação de jogos,
+          estamos sempre em busca de novas maneiras de melhorar o suporte aos
+          nossos jogadores. Acreditamos que o feedback e as sugestões dos
+          jogadores são essenciais para a melhoria contínua dos nossos jogos e
+          serviços.
+        </p>
+      </div>
+    </section>
+
+    <!-- Parte dos Projetos -->
+    <section class="project-page" id="projetos">
+      <div class="middle-text">
+        <h2>Conheça nossos<span> Projetos</span></h2>
+      </div>
+
+      <div class="projects-content">
+        <div class="image-project" data-animation="left" id="Braver">
+          <img
+            src="./assets/projects-image/project-image-01.jpeg"
+            alt="Garota gamer"
+          />
+          <div class="subtitle-image-project">
+            <h4>Braver</h4>
+            <p>
+              Num mundo futurístico, duas organizações estão em guerra
+              disputando quem irá tomar o controle da matéria prima mais valiosa
+              do planeta, o minério prismático.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-project" data-animation="top" id="ChaosChild">
+          <img
+            src="./assets/projects-image/project-image-02.jpeg"
+            alt="Mago boladao"
+          />
+          <div class="subtitle-image-project">
+            <h4>Chaos Child</h4>
+            <p>
+              No Reino de Tyrhn um velho bruxo vaga pelos vilarejos e aldeias em
+              uma jornada em busca do filho perdido do caos, a criança que
+              segundo os antigos pergaminhos seria responsável pelo maior
+              cataclisma que a humanidade um dia irá presenciar.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-project" data-animation="right" id="Illutopia">
+          <img
+            src="./assets/projects-image/project-image-03.jpeg"
+            alt="Que bixo é esse"
+          />
+          <div class="subtitle-image-project">
+            <h4>Illutopia</h4>
+            <p>
+              Em um vilarejo no mágico mundo dos Bowdins, todas as criaturas se
+              ajudam e vivem pacificamente até o surgimento das criaturas da
+              Dimensão Perdida que invadiram seu mundo e roubaram a Jóia de Zoi,
+              uma gema que é responsável pela vitalidade de seu mundo, agora em
+              crise, os Bowdins serão obrigados a partir em uma jornada para
+              recuperar sua inestimável gema e trazer a paz de volta para seu
+              alegre mundo.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-project" data-animation="left" id="Viggenhorn">
+          <img
+            src="./assets/projects-image/project-image-04.jpeg"
+            alt="CAVALEIRO BOLADAO"
+          />
+          <div class="subtitle-image-project">
+            <h4>Viggenhorn</h4>
+            <p>
+              O reino de Orhnt começou expedições no místico Continente Caído,
+              agora eles terão que confrontar criaturas e condições climáticas
+              inimagináveis enquanto desbravam essa terra e tentam sobreviver a
+              qualquer custo nesse ambiente extremo e hóstil.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-project" data-animation="bottom" id="Snowt">
+          <img
+            src="./assets/projects-image/project-image-05.jpg"
+            alt="Esta muy frio"
+          />
+          <div class="subtitle-image-project">
+            <h4>Snowt</h4>
+            <p>
+              Neste fantástico conto sombrio uma pequena criança chamada Myx
+              terá que fugir das mortais e sombrias florestas de Kowmav
+              conhecida por sua imensa extensão e misteriosos boatos que falam
+              da habitação de almas e criaturas ceifadoras que estariam
+              aguardando a aproximação de alguma doce alma para caçar e ceifar.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-project" data-animation="right" id="Avakt">
+          <img
+            src="./assets/projects-image/project-image-06.jpeg"
+            alt="Ta olhando pq quer me dar"
+          />
+          <div class="subtitle-image-project">
+            <h4>Avakt - Tears Of Hope</h4>
+            <p>
+              Uma destemida garota parte em uma aventura através de diversos
+              biomas em busca dos artefatos hereditários de sua família que
+              outrora foram roubados por colonizadores, mas o que ela não
+              contava era que ela não é a única em busca dos artefatos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parte do Contato -->
+    <section class="contact-page" id="contato">
+      <div class="contact-page-text" data-animation="left">
+        <h2>Entre em <span>contato</span></h2>
+        <h4>
+          Quer fazer parte da nossa equipe? Teve algum problema? Tem alguma
+          sugestão? Nos contate!
+        </h4>
+      </div>
+
+      <div class="contact-page-form" data-animation="right">
+        <form action="">
+          <input type="name" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <input type="text" placeholder="Assunto" maxlength="10" required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensagem"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar Mensagem" class="enviar" />
+        </form>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
